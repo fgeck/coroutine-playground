@@ -12,6 +12,7 @@ import java.io.IOException
 
 class ParquetVerifier {
     private val logger = mu.KotlinLogging.logger {}
+
     fun verifyParquetFile(path: String) {
         val apachePath = Path(path)
         // ParquetReader.builder<HadoopInputFile>(AvroReadSupport(), apachePath).build().use { reader ->

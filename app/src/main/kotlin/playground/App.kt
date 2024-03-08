@@ -17,11 +17,16 @@ class App {
     fun runParquetVerifier() {
         val logger = KotlinLogging.logger {}
         logger.info { "------- Start Parquet Verifier -------" }
+        println()
+
         val verifier = ParquetVerifier()
+
         logger.info { "------- Verify valid parquetfile -------" }
         verifier.verifyParquetFile("/Users/d068994/Desktop/parquetfiles/healthy.parquet")
+        println()
         logger.info { "------- Verify corrupted parquetfile -------" }
         verifier.verifyParquetFile("/Users/d068994/Desktop/parquetfiles/corrupted.parquet")
+        println()
         logger.info { "------- Finished Parquet Verifier -------" }
     }
 }
