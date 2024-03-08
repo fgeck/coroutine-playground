@@ -9,7 +9,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 import mu.KotlinLogging
 
-class Channel {
+class MyChannel {
     private companion object {
         private const val CONSUMERS_SIZE = 5
         private const val CHANNEL_SIZE = 9
@@ -35,7 +35,7 @@ class Channel {
     fun startConsumer(scope: CoroutineScope) {
         repeat(CONSUMERS_SIZE) {
             val consumer = scope.launch(CoroutineName("Consumer #${it + 1}")) {
-                delay(500L)
+                delay(5000L)
                 for (y in channel) {
                     logger.info { "Coroutine: ${this.coroutineContext[CoroutineName]} Received $y" }
                     delay(y*500L)

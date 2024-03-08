@@ -24,6 +24,19 @@ dependencies {
     implementation("com.google.guava:guava:32.1.1-jre")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.5.0")
+
+    implementation("org.apache.parquet:parquet-avro:1.13.1")
+    implementation("org.apache.parquet:parquet-hadoop:1.13.1")
+    implementation("org.apache.hadoop:hadoop-common:3.3.6")
+    implementation("org.apache.hadoop:hadoop-hdfs:3.3.6")
+    implementation("org.apache.hadoop:hadoop-mapreduce-client-core:3.3.6")
+    // implementation("org.apache.parquet:parquet-avro:1.10.1")
+    // implementation("org.apache.parquet:parquet-hadoop:1.10.1")
+    // implementation("org.apache.hadoop:hadoop-common:2.7.1")
+    // implementation("org.apache.hadoop:hadoop-mapreduce-client-core:2.7.1")
+    // implementation("org.apache.hadoop:hadoop-hdfs:2.7.1")
+
+
     implementation("io.github.microutils:kotlin-logging:3.0.5")
     implementation("org.slf4j:slf4j-api:2.0.12")
     implementation("ch.qos.logback:logback-classic:1.5.1")
